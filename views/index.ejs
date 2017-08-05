@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/login.css">
+    <style>
+      body,html{
+        height: 100%;
+        padding: 0;
+        margin: 0;
+      }
+      body{
+        background: url('/images/timg.jpg') center center no-repeat;
+        font-family: 'PingFang SC',sans-serif;
+      }
+      .container{
+        height:100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <setion id="login_from">
+        <form action="/saveUsers" method="post">
+          <h1>欢迎登陆</h1>
+          <div>
+            <div class="input-items">
+              <div class="input-item">
+                <label for="">用户名:</label>
+                <input type="text" name="username">
+              </div>
+              <div class="input-item">
+                <label for="">密码:</label>
+                <input type="password" name="password">
+              </div>
+            </div>
+          </div>
+          <div class="btn">
+            <input type="submit" value="提交">
+          </div>
+        </form>
+      </setion>
+    </div>
+  </body>
+</html>
