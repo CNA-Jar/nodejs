@@ -24,11 +24,11 @@ function optDateBase(sql, res, routesName, renderName){
         console.log(result);
         res.statusCode = 200;
         // res.send(result);
-        return res.json({data:result});
-        // res.render(renderName, { users : result});
+        // return res.json({data:result});
+        res.render(renderName, { users : result});
       }
     }
-    client.end();
+    // client.end();
   })
 }
 

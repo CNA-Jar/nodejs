@@ -3,6 +3,7 @@
  */
 var saveUser  = require('../controller/saveUser');
 var getUser = require('../controller/getUsers');
+var saveFiles = require('../controller/saveFiles');
 
 module.exports = function(app){
   app.get('/',function(req,res){
@@ -22,4 +23,8 @@ module.exports = function(app){
     // res.render('home', { username: 'customer111'});
     getUser(res);
   });
+  app.post('/saveFiles', function(req,res){
+    var data = req.body;
+    saveFiles(data, res);
+  })
 };
